@@ -13,7 +13,11 @@
 -- Customer_Join : Date when customer joined the platform
 
 
-Q1. Find all the details joining the two tables Transaction_Table and CUSTOMER_DETAILS
+-- Banned_CUSTOMER
+-- Customer_Id : Customer_ID of the customer
+-- Banned : Banned Customer (1 = Banned, 0 = Not Banned)
+
+Q1. Find the Customer Name with the highest transaction value (Successful) and is a banned customer
 
 
-Q2. Find the Name of the customer with the highest Transaction Amount ( Sucessfull one )
+Q2. Generate a table with 2nd Customer Transaction_Amount (Successful)
