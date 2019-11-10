@@ -1,6 +1,6 @@
 # Given below is the fibonacci function which gives the nth fibonacci values
 
-# Find the potential flaw with the program
+# Correct the function such that it provides the right output
 def fibonacci(n):
     a = 0
     b = 1
