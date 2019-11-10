@@ -1,18 +1,45 @@
-# For the string below, generate the code to find if it is pallindrome or not
-str_1 = "malayalam"
-str_2 = "john_doe"
+import pandas as pd
 
-# Modify the function to output True/False based on the string provided
+s = "1#shyam#datascience#ml,2#robie#physics#economy#daTASCIence#maths," \
+    "3#vignesh#robotics#maths#economy,4#preeth#geology#english#maths" \
+    "#datascience#timeseries"
+# Area of interest
+values = [j[2:] for j in [x.split('#') for x in s.split(',')]]
 
-def reverse(s):
-    return s[::-1]
+# Flattening the List
+values_flat = []
+for i in range(len(values)):
+    for j in range(len(values[i])):
+        values_flat.append(values[i][j])
+values_flat_1 = map(str.lower,values_flat)
 
-def is_pallindrome(val):
-    Flag = False
-    val_1 = reverse(val)
-    if val_1 == val:
-        Flag = True
-    return(Flag)
+values_DF = pd.DataFrame(values_flat_1,columns=['Interest'])
 
-print(is_pallindrome(str_1))
-print(is_pallindrome(str_2))
+distribution = values_DF.groupby(['Interest'])['Interest'].count()
+
+distribution.plot()
+
+# Solution 2
+
+# Step 1 : Seperate the main section by (,)
+a = s.split(',')
+# Step 2 : Seperate the elements by ('#')
+b = []
+for i in a:
+    b.append(i.split('#'))
+dict = {}
+e = list(dict.keys())
+
+for i in b:
+    q = 0
+    for j in i:
+        k = j.lower()
+        if q < 2:
+            q += 1
+        else:
+            if k not in e:
+                dict[k] = 1
+                e = list(dict.keys())
+            else:
+                dict[k] += 1
+
