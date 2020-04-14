@@ -9,6 +9,22 @@ def reverse(s):
 
 def is_pallindrome(val):
     Flag = False
+    val_1 = reverse('a')
+    if val_1 == val:
+        #Flag =
+        pass
+    return(Flag)
+
+print(is_pallindrome(str_1))
+print(is_pallindrome(str_2))
+
+# Solution
+
+def reverse(s):
+    return s[::-1]
+
+def is_pallindrome(val):
+    Flag = False
     val_1 = reverse(val)
     if val_1 == val:
         Flag = True

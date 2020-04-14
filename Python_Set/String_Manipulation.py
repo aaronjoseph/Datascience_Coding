@@ -3,6 +3,14 @@ import pandas as pd
 s = "1#shyam#datascience#ml,2#robie#physics#economy#daTASCIence#maths," \
     "3#vignesh#robotics#maths#economy,4#preeth#geology#english#maths" \
     "#datascience#timeseries"
+
+# Question
+
+Q1. For the data above, form a tablular Data set and find the area of interest
+
+
+# Solution 
+
 # Area of interest
 values = [j[2:] for j in [x.split('#') for x in s.split(',')]]
 
@@ -42,4 +50,3 @@ for i in b:
                 e = list(dict.keys())
             else:
                 dict[k] += 1
-

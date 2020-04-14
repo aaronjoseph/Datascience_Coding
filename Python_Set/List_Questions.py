@@ -10,6 +10,8 @@ Similar to the output below
 ['glowing green', 'glowing red', 'glowing blue', 'glowing yellow']
 """
 
+
+
 # Solutions
 [[color2 + ' ' + color1 for color1 in color_list1] for color2 in color_list2]
 
