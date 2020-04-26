@@ -1,0 +1,8 @@
+Q1. Consider the following situation, if due to a pandemic your portfolio takes 95% drop from first valuation.
+With the current valuation at 5%, how much % increase on the current amount will take you to the first valuation.
+
+A1. 1900% and not 2000% 
+    5% * 19 = 100%
+    Therefore, 19*100 = 1900%
+
+
