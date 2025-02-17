@@ -32,3 +32,6 @@ def is_pallindrome(val):
 
 print(is_pallindrome(str_1))
 print(is_pallindrome(str_2))
+
+
+a=1
