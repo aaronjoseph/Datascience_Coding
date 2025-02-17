@@ -21,7 +21,3 @@ def buy_and_sell_stock_twice(prices):
         )
 
     return max_total_profit
-
-price = [3, 3, 5, 0, 0, 3, 1, 4]
-
-print(buy_and_sell_stock_twice(price))
